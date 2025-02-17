@@ -21,7 +21,7 @@ jobs:
           command: |
             docker build -t meesum3595 -t meesum3595/meesum:latest .
             echo $DOCKER_PASSWORD | docker login -u meesum3595 --password-stdin
-            docker push meesum/meesuma1:latest
+            docker push meesum3595/meesum:latest
 
 workflows:
   build_test:
