@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-            docker build -t meesuma1 -t meesum/meesuma1:latest .
+            docker build -t meesum3595 -t meesum3595/meesum:latest .
             echo $DOCKER_PASSWORD | docker login -u meesum3595 --password-stdin
             docker push meesum/meesuma1:latest
 
